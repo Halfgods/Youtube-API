@@ -46,6 +46,7 @@ button {
     cursor: pointer;
     border-radius: 5px;
     transition: 0.3s ease-in-out;
+    border-radius: 8px;
 }
 
 button:hover {
@@ -184,3 +185,39 @@ hr {
 .thumbnail[style*="url('')"] {
     background-image: url('/static/defaultlogo.jpg');
 }
+.saved-videos-container {
+    margin-top: 40px;
+    border-top: 2px solid cyan;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.saved-videos-container h3 {
+    color: #00ffff;
+    text-shadow: 0 0 10px cyan;
+    margin-bottom: 10px;
+}
+.video-card .delete-btn {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    background: transparent; /* remove white bg */
+    border: none;
+    color: rgb(0, 0, 0);  /* white cross */
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+    z-index: 999;
+  }
+  
+  .video-card .delete-btn:hover {
+    opacity: 1;
+  }
+  
